@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Almarai', sans-serif; 
+    width: 100vw;
+    height: 100vh;
+    /* position: fixed; */
+    background:linear-gradient(to top,white,rgb(127, 190, 246));
+
+
+}
+.container {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slide-row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 2400px;
+    transition: all 0.5s;
+}
+.slide-col {
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.testimonial {
+    background-color: #fff;
+    /* height: 100%; */
+    overflow: hidden;
+    /* padding-top: 90px; */
+    height: 20%;
+    border-radius: 20px;
+    width: 100%;
+}
+#fas{
+    float: right;
+    margin-right: 10px;
+}
+.client-comment{
+    margin-left: 10px;
+}
+#fes{
+    float: left;
+}
+.user-text p:first-child {
+    width: 50%;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    /* background: #ce7474; */
+    padding-top: 90px;
+    padding: 20px;
+    border-bottom: 2px solid #0b0304;
+    border-top: 2px solid #0d0405;
+    border-radius: 20px 10px 5px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    margin-top: 30px; 
+}
+.client img {
+    width: 30%;
+    height: 20%;
+    border-radius: 90%;
+}
+i {
+    /* font-size: 30px; */
+    color: rgb(127, 190, 246);
+}
+.slide-col i:first-child {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.indicator {
+    position: absolute;
+    left: 50%;
+    margin-left: 10px;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+.btn {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #fff;
+    cursor: pointer;
+    z-index: 999;
+    background-color: rgb(127, 190, 246);
+
+}
+.active {
+    width: 45px;
+    transition: 0.2s;
+}
+@media screen and (min-width: 80rem) {
+    .container {
+      margin: 1em 2em;
+    }
+    html {
+        font-size: 1em;
+       }
+       
+       h1 {
+        font-size: 2rem;
+       }
+       
+       
+       
+   }
+   
+
+
+
